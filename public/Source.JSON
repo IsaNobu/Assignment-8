@@ -1,0 +1,121 @@
+[
+    {
+      "Id": 1,
+      "bookName": "The Hitchhiker's Guide to the Galaxy",
+      "author": "Douglas Adams",
+      "image": "https://i.ibb.co/Rhnwt8k/book.png",
+      "review": "A humorous science fiction comedy that follows Arthur Dent on his adventures through space after Earth is demolished to make way for a hyperspace bypass.",
+      "totalPages": 192,
+      "rating": 4.2,
+      "category": "Science Fiction",
+      "tags": ["Humor", "Satire"],
+      "publisher": "Pan Books",
+      "yearOfPublishing": 1979
+    },
+    {
+      "Id": 2,
+      "bookName": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "image": "https://i.ibb.co/JckvpTy/book-1.png",
+      "review": "A witty social commentary that follows the lives of the Bennet sisters as they search for love and marriage in early 19th century England.",
+      "totalPages": 224,
+      "rating": 4.5,
+      "category": "Romance",
+      "tags": ["Classic", "Social Commentary"],
+      "publisher": "Penguin Classics",
+      "yearOfPublishing": 1813
+    },
+    {
+      "Id": 3,
+      "bookName": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "image": "https://i.ibb.co/wr83cQ1/book-2.png",
+      "review": "A powerful coming-of-age story that explores themes of racial injustice and prejudice in the American South.",
+      "totalPages": 324,
+      "rating": 4.8,
+      "category": "Fiction",
+      "tags": ["Coming-of-Age", "Social Justice"],
+      "publisher": "J.B. Lippincott & Co.",
+      "yearOfPublishing": 1960
+    },
+    {
+      "Id": 4,
+      "bookName": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "image": "https://i.ibb.co/93qnxWJ/book-3.png",
+      "review": "An epic high fantasy adventure that follows Frodo Baggins and the Fellowship of the Ring on a quest to destroy the One Ring.",
+      "totalPages": 1136,
+      "rating": 4.9,
+      "category": "Fantasy",
+      "tags": ["Epic", "Adventure"],
+      "publisher": "Allen & Unwin",
+      "yearOfPublishing": 1954
+    },
+    {
+      "Id": 5,
+      "bookName": "Frankenstein",
+      "author": "Mary Shelley",
+      "image": "https://i.ibb.co/TYnMg4v/book-4.png",
+      "review": "A gothic novel that explores the dangers of scientific ambition and the nature of humanity.",
+      "totalPages": 218,
+      "rating": 4.3,
+      "category": "Gothic Fiction",
+      "tags": ["Science Fiction", "Horror"],
+      "publisher": "Lackington, Hughes, Harding and Mavor",
+      "yearOfPublishing": 1818
+    },
+    {
+      "Id": 6,
+      "bookName": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "image": "https://i.ibb.co/yFLvZmF/book-5.png",
+      "review": "A coming-of-age story that follows Holden Caulfield's expulsion from boarding school and his cynical observations of society.",
+      "totalPages": 224,
+      "rating": 4.1,
+      "category": "Fiction",
+      "tags": ["Coming-of-Age", "Cynicism"],
+      "publisher": "Little, Brown and Company",
+      "yearOfPublishing": 1951
+    },
+    {
+        "Id": 7,
+        "bookName": "Dune",
+        "author": "Frank Herbert",
+        "image": "https://i.ibb.co/qkLtyW0/book-6.png",
+        "review": "A complex science fiction novel set on the desert planet Arrakis, where humanity fights for control of the valuable spice melange.",
+        "totalPages": 863,
+        "rating": 4.7,
+        "category": "Science Fiction",
+        "tags": ["Political", "Ecology"],
+        "publisher": "Chilton Books",
+        "yearOfPublishing": 1965
+      },
+      {
+        "Id": 8,
+        "bookName": "One Hundred Years of Solitude",
+        "author": "Gabriel García Márquez",
+        "image": "https://i.ibb.co/xffBgzq/book-7.png",
+        "review": "A magical realist novel that chronicles the rise and fall of the Buendía family through seven generations in the fictional town of Macondo.",
+        "totalPages": 487,
+        "rating": 4.6,
+        "category": "Magical Realism",
+        "tags": ["Family Saga", "Historical"],
+        "publisher": "Editorial Sudamericana",
+        "yearOfPublishing": 1967
+      },
+      {
+        "Id": 9,
+        "bookName": "A Brief History of Time",
+        "author": "Stephen Hawking",
+        "image": "https://i.ibb.co/2Wxtx0f/book-8.png",
+        "review": "A popular science book that explores the origins and nature of the universe, including topics like black holes and the Big Bang.",
+        "totalPages": 212,
+        "rating": 4.2,
+        "category": "Science",
+        "tags": ["Cosmology", "Black Holes"],
+        "publisher": "Bantam Books",
+        "yearOfPublishing": 1988
+      }
+  ]
+
+  
