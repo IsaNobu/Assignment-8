@@ -11,7 +11,7 @@ const Banner = () => {
             <span>your bookshelf</span>
           </h1>
           <div>
-            <NavLink>
+            <NavLink to={"/Listed-Books"}>
               <button className="text-white bg-[#23BE0A] text-2xl px-4 py-3 rounded-2xl hover:bg-green-600">
                 View The List
               </button>

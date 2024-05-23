@@ -1,10 +1,16 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import Tags from "../Book/Tags";
 import { CiStar } from "react-icons/ci";
+import { IoIosHeartEmpty, IoMdHeart } from "react-icons/io";
+import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { saveReadData, saveWLData } from "../../../../../public/Storage";
 
 const BooksDetails = () => {
   const getData = useLoaderData();
   const { id } = useParams();
+  const idInt = parseInt(id);
 
   const details = getData.find((detail) => detail.Id == id);
 
@@ -20,6 +26,38 @@ const BooksDetails = () => {
     yearOfPublishing,
     rating,
   } = details;
+
+  const [liked, setLiked] = useState(false);
+  const [a, setA] = useState(<IoIosHeartEmpty />);
+
+  const clicked = (isClicked) => {
+    if (!liked) {
+      setA(a === <IoIosHeartEmpty /> ? <IoIosHeartEmpty /> : <IoMdHeart />);
+      setLiked(isClicked);
+    }
+  };
+
+  const [readButton, setReadButton] = useState(false);
+  const [WLButton, setWLButton] = useState(false);
+
+  const handleReadButton = () => {
+    if (!readButton) {
+      setReadButton(true);
+      setWLButton(true);
+      saveReadData(idInt);
+    } else if (readButton && WLButton) {
+      toast("You've already added");
+    }
+  };
+
+  const handleWLButton = () => {
+    if (!readButton && !WLButton) {
+      setWLButton(true);
+      saveWLData(idInt);
+    } else if (readButton && WLButton) {
+      toast("You've already added");
+    }
+  };
 
   return (
     <div className="flex flex-col lg:flex-row justify-center gap-12 mt-10 lg:p-0 p-4">
@@ -68,6 +106,27 @@ const BooksDetails = () => {
               <CiStar />
             </span>
           </p>
+        </div>
+        <div className="mt-6 flex justify-between items-center">
+          <div>
+            <button onClick={handleReadButton} className="btn btn-outline">
+              Read
+            </button>
+            <button
+              onClick={handleWLButton}
+              className="btn btn-info text-white ml-6"
+            >
+              Wishlist
+            </button>
+          </div>
+          <div>
+            <button className="text-3xl" onClick={() => clicked(true)}>
+              {a}
+            </button>
+          </div>
+        </div>
+        <div>
+          <ToastContainer />
         </div>
       </div>
     </div>

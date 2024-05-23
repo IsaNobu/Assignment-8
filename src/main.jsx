@@ -5,6 +5,9 @@ import "./index.css";
 import ErrorPage from "./error-page";
 import Home from "./components/Home/Home.jsx";
 import BooksDetails from "./components/Home/BooksSection/BookDetails/BooksDetails.jsx";
+import ListedBooks from "./components/Listed Books/ListedBooks.jsx";
+import ReadBooks from "./components/Listed Books/ReadBooks.jsx";
+import WishBooks from "./components/Listed Books/WishBooks.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +21,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/Listed-Books",
-        element: <div>polo</div>,
+        element: <ListedBooks></ListedBooks>,
+        children: [
+          {
+            path: "Listed-Books-1",
+            element: <ReadBooks></ReadBooks>,
+            loader: () => fetch("Source.JSON"),
+          },
+          {
+            path: "Listed-Books-2",
+            element: <WishBooks></WishBooks>,
+            loader: () => fetch("Source.JSON"),
+          },
+        ],
       },
       {
         path: "/BooksSection/:id",
