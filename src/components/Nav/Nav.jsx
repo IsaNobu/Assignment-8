@@ -44,6 +44,16 @@ const Nav = () => {
       >
         Write your own books
       </NavLink>
+      <NavLink
+        to={"/Review"}
+        className={({ isActive }) =>
+          isActive
+            ? "active border-[#23BE0A] border-2 px-5 py-2 rounded-xl text-[#23BE0A]"
+            : "border-gray-500 border-2 px-5 py-2 rounded-xl text-gray-500"
+        }
+      >
+        Review
+      </NavLink>
     </>
   );
 

@@ -1,0 +1,50 @@
+[
+    {
+    "reviewer": "Sarah Jones",
+    "rating": 4.5,
+    "review": "A thought-provoking and beautifully written exploration of grief and memory. I found myself completely invested in the characters and their journeys. Highly recommend!",
+    "bookTitle": "Circe",
+    "author": "Madeline Miller",
+    "date": "2024-05-24"
+    },
+    {
+    "reviewer": "David Lee",
+    "rating": 4.2,
+    "review": "This book kept me guessing until the very end! The plot twists were clever and the characters were well-developed. A thrilling and suspenseful read.",
+    "bookTitle": "The Girl with the Dragon Tattoo",
+    "author": "Stieg Larsson",
+    "date": "2024-05-24"
+    },
+    {
+    "reviewer": "Emily Chen",
+    "rating": 5,
+    "review": "An instant classic! A powerful and moving story about the importance of family and community. I laughed, I cried, and I couldn't put it down.",
+    "bookTitle": "Little Fires Everywhere",
+    "author": "Celeste Ng",
+    "date": "2024-05-24"
+    },
+    {
+    "reviewer": "Michael Brown",
+    "rating": 3.8,
+    "review": "An interesting concept with a unique writing style. I enjoyed the historical setting, but the pacing felt a bit slow at times. Overall, a good read for fans of historical fiction.",
+    "bookTitle": "Cloud Atlas",
+    "author": "David Mitchell",
+    "date": "2024-05-24"
+    },
+    {
+    "reviewer": "Amanda Garcia",
+    "rating": 4.7,
+    "review": "A beautifully written and emotionally resonant novel. The characters are complex and relatable, and the story explores important themes of love, loss, and redemption. A must-read!",
+    "bookTitle": "The Remains of the Day",
+    "author": "Kazuo Ishiguro",
+    "date": "2024-05-24"
+    },
+    {
+    "reviewer": "Matthew Williams",
+    "rating": 4.1,
+    "review": "A funny and heartwarming story about finding your place in the world. The characters are quirky and lovable, and the dialogue is witty and insightful. A perfect feel-good read.",
+    "bookTitle": "Eleanor Oliphant is Completely Fine",
+    "author": "Gail Honeyman",
+    "date": "2024-05-24"
+    }
+    ]

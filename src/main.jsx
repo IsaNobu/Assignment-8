@@ -10,6 +10,7 @@ import ReadBooks from "./components/Listed Books/ReadBooks.jsx";
 import WishBooks from "./components/Listed Books/WishBooks.jsx";
 import PagesToRead from "./components/PagesToRead/PagesToRead.jsx";
 import WriteYourBook from "./components/WriteYourBook/WriteYourBook.jsx";
+import Review from "./components/Review/Review.jsx";
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "/Write-Your-Book",
         element: <WriteYourBook></WriteYourBook>,
+      },
+      {
+        path: "/Review",
+        element: <Review></Review>,
       },
       {
         path: "/BooksSection/:id",
