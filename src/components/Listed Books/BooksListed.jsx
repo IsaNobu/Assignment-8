@@ -16,8 +16,8 @@ const BooksListed = ({ data }) => {
     rating,
   } = data;
   return (
-    <div className="border-2 rounded-2xl p-4 flex gap-6">
-      <div className=" rounded-2xl w-[230px] bg-[#1313130D]">
+    <div className="border-2 rounded-2xl p-4 flex lg:flex-row flex-col gap-6">
+      <div className=" rounded-2xl lg:w-[230px] bg-[#1313130D]">
         <img className="w-[120px] mx-auto py-4" src={image} alt="" />
       </div>
       <div className="space-y-3">
@@ -44,10 +44,10 @@ const BooksListed = ({ data }) => {
           </p>
         </div>
         <div className="flex items-center gap-4">
-          <div className="badge bg-[#328EFF26] text-[#328EFF] px-4 py-3 text-xl">
+          <div className="badge bg-[#328EFF26] text-[#328EFF] px-4 py-8 lg:py-3 text-xl">
             Category: {category}
           </div>
-          <div className="badge bg-[#FFAC3326] text-[#FFAC33] px-4 py-3 text-xl">
+          <div className="badge bg-[#FFAC3326] text-[#FFAC33] px-4 py-8 lg:py-3 text-xl">
             Rating: {rating}
           </div>
           <div>

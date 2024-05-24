@@ -8,6 +8,7 @@ import BooksDetails from "./components/Home/BooksSection/BookDetails/BooksDetail
 import ListedBooks from "./components/Listed Books/ListedBooks.jsx";
 import ReadBooks from "./components/Listed Books/ReadBooks.jsx";
 import WishBooks from "./components/Listed Books/WishBooks.jsx";
+import PagesToRead from "./components/PagesToRead/PagesToRead.jsx";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
             element: <WishBooks></WishBooks>,
           },
         ],
+      },
+      {
+        path: "/Pages-To-Read",
+        element: <PagesToRead></PagesToRead>,
       },
       {
         path: "/BooksSection/:id",
