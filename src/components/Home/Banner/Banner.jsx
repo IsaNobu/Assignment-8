@@ -21,7 +21,7 @@ const Banner = () => {
         <div>
           <img
             className="lg:w-[318px] lg:h-[349px] h-[200px]"
-            src="../../../../public/book.png"
+            src={"https://i.ibb.co/Rhnwt8k/book.png"}
             alt=""
           />
         </div>
