@@ -16,7 +16,7 @@ const saveReadData = (id) => {
   }
 };
 
-const getWLdData = () => {
+const getWLData = () => {
   const storedData = localStorage.getItem("WL-data");
   if (storedData) {
     return JSON.parse(storedData);
@@ -25,7 +25,7 @@ const getWLdData = () => {
 };
 
 const saveWLData = (id) => {
-  const storedData = getWLdData();
+  const storedData = getWLData();
   const ifExists = storedData.find((Id) => Id === id);
 
   if (!ifExists) {
@@ -34,4 +34,4 @@ const saveWLData = (id) => {
   }
 };
 
-export { saveReadData, getReadData, saveWLData, getWLdData };
+export { saveReadData, getReadData, saveWLData, getWLData };

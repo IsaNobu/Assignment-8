@@ -10,7 +10,6 @@ import { saveReadData, saveWLData } from "../../../../../public/Storage";
 const BooksDetails = () => {
   const getData = useLoaderData();
   const { id } = useParams();
-  const idInt = parseInt(id);
 
   const details = getData.find((detail) => detail.Id == id);
 
@@ -44,7 +43,7 @@ const BooksDetails = () => {
     if (!readButton) {
       setReadButton(true);
       setWLButton(true);
-      saveReadData(idInt);
+      saveReadData(id);
     } else if (readButton && WLButton) {
       toast("You've already added");
     }
@@ -53,7 +52,7 @@ const BooksDetails = () => {
   const handleWLButton = () => {
     if (!readButton && !WLButton) {
       setWLButton(true);
-      saveWLData(idInt);
+      saveWLData(id);
     } else if (readButton && WLButton) {
       toast("You've already added");
     }

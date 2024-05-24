@@ -4,7 +4,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import { IoPersonOutline } from "react-icons/io5";
 import { RiPagesLine } from "react-icons/ri";
 
-const ReadListedBooks = ({ data }) => {
+const BooksListed = ({ data }) => {
   const {
     image,
     bookName,
@@ -61,8 +61,8 @@ const ReadListedBooks = ({ data }) => {
   );
 };
 
-ReadListedBooks.propTypes = {
+BooksListed.propTypes = {
   data: PropTypes.object.isRequired,
 };
 
-export default ReadListedBooks;
+export default BooksListed;

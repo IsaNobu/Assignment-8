@@ -1,7 +1,29 @@
+import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { NavLink, Outlet } from "react-router-dom";
+import WishBooks from "./WishBooks";
 
 const ListedBooks = () => {
+  const [data, setData] = useState([]);
+  const [active1, setActive1] = useState(true);
+  const [active2, setActive2] = useState(false);
+
+  const handleClickForListedBooks2 = () => {
+    fetch("Source.JSON")
+      .then((response) => response.json())
+      .then((newData) => setData(newData));
+
+    setActive2(true);
+    setActive1(false);
+  };
+  const handleClickForListedBooks1 = () => {
+    container.textContent("");
+    setActive1(true);
+    setActive2(false);
+  };
+
+  const container = document.getElementById("container");
+
   return (
     <div>
       <div className=" w-[350px] py-5 lg:w-[1160px] bg-[#1313130D] lg:py-9 text-center mx-auto rounded-3xl mt-6 text-xl font-bold">
@@ -31,22 +53,25 @@ const ListedBooks = () => {
         <div className="text-2xl flex gap-4 mt-6 border-b-2">
           <div>
             <NavLink
-              className={({ isActive }) => (isActive ? "active font-bold" : "")}
-              to={"Listed-Books-1"}
+              className={active1 ? "font-bold" : ""}
+              to={"/Listed-Books"}
+              onClick={handleClickForListedBooks1}
             >
               Read Books
             </NavLink>
           </div>
           <div>
             <NavLink
-              className={({ isActive }) => (isActive ? "active font-bold" : "")}
-              to={"Listed-Books-2"}
+              to="/Listed-Books/Listed-Books-2"
+              className={active2 ? "active font-bold" : ""}
+              onClick={handleClickForListedBooks2}
             >
-              Wishlist Books
+              Wish Books
             </NavLink>
           </div>
         </div>
-        <div>
+        <WishBooks data={data}></WishBooks>
+        <div id="container">
           <Outlet></Outlet>
         </div>
       </div>
