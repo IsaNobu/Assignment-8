@@ -5,7 +5,7 @@ import { RxAvatar } from "react-icons/rx";
 const Reviews = ({ data }) => {
   const { rating, date, bookTitle, review, reviewer, author } = data;
   return (
-    <div className="w-[600px]">
+    <div className="lg:w-[600px] w-[370px]">
       <div className="border-2 p-5 space-y-6 rounded-3xl border-yellow-400">
         <div className="flex items-center justify-between">
           <h1 className="text-2xl flex items-center">

@@ -61,9 +61,12 @@ const Nav = () => {
     <div>
       <div id="navBar" className="navbar bg-white flex justify-around mt-4">
         <div className="hidden lg:block">
-          <h1 className="raleway text-2xl font-extrabold lg:text-4xl">
+          <NavLink
+            to={"/"}
+            className="raleway text-2xl font-extrabold lg:text-4xl"
+          >
             Book Vibe
-          </h1>
+          </NavLink>
         </div>
         <div className="lg:hidden flex">
           <div className="dropdown">
@@ -77,9 +80,12 @@ const Nav = () => {
               {links}
             </ul>
           </div>
-          <h1 className="raleway text-2xl font-extrabold lg:text-4xl">
+          <NavLink
+            to={"/"}
+            className="raleway text-2xl font-extrabold lg:text-4xl"
+          >
             Book Vibe
-          </h1>
+          </NavLink>
         </div>
         <div className="hidden lg:block space-x-11">{links}</div>
         <div>
